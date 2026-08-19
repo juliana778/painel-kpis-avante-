@@ -254,6 +254,113 @@
     color:var(--branco);
     margin-left:12px;
   }
+  .watchlist-list{
+    display:flex;
+    flex-direction:column;
+  }
+  .watchlist-list .watch-item{
+    justify-content:flex-start;
+    padding:13px 0;
+    gap:32px;
+  }
+  .watchlist-list .watch-name{
+    font-size:34px;
+    width:1750px;
+    flex:0 0 auto;
+  }
+  .watchlist-list .watch-count{
+    font-size:34px;
+    flex:0 0 auto;
+  }
+  .watchlist-list .watch-count span{
+    font-size:26px;
+  }
+
+  .ranking-card{
+    background:var(--card-bg);
+    border-radius:44px;
+    padding:56px 76px;
+  }
+  .ranking-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:32px;
+  }
+  .ranking-cols{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  .rank-item{
+    display:flex;
+    align-items:center;
+    padding:9px 0;
+    border-bottom:1px solid rgba(0,0,0,0.15);
+    gap:28px;
+  }
+  .rank-item:last-child{border-bottom:none;}
+  .rank-num{
+    font-size:28px;
+    font-weight:800;
+    color:var(--branco);
+    opacity:0.55;
+    min-width:44px;
+  }
+  .rank-name{
+    font-size:28px;
+    font-weight:700;
+    color:var(--branco);
+    line-height:1.2;
+    width:1150px;
+    flex:0 0 auto;
+  }
+  .rank-count{
+    font-size:28px;
+    font-weight:800;
+    color:var(--branco);
+    white-space:nowrap;
+    width:160px;
+    flex:0 0 auto;
+  }
+  .rank-badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-size:21px;
+    font-weight:800;
+    padding:7px 22px;
+    border-radius:40px;
+    text-transform:uppercase;
+    white-space:nowrap;
+    min-width:140px;
+    flex:0 0 auto;
+  }
+  .rank-badge.prata{background:var(--cinza-claro); color:var(--preto);}
+  .rank-badge.bronze{background:#FF8C42; color:var(--preto);}
+  .rank-badge.ouro{background:#FFD45C; color:var(--preto);}
+  .rank-badge.diamante{background:#4C8DFF; color:var(--branco);}
+  .rank-badge.novo{background:var(--verde); color:var(--branco);}
+  .rank-item-header{
+    padding:0 0 14px 0;
+    border-bottom:2px solid rgba(255,255,255,0.35);
+  }
+  .rank-item-header .rank-name,
+  .rank-item-header .rank-count{
+    font-size:24px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    color:var(--caption);
+  }
+  .rank-badge-label{
+    font-size:24px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    color:var(--caption);
+    min-width:140px;
+    flex:0 0 auto;
+  }
 
   footer{
     margin-top:60px;
@@ -436,7 +543,7 @@
             <div class="card-label">Distribuidores para contato — licenças finalizadas na semana</div>
             <div style="font-size:34px; font-weight:700; color:var(--branco);">17/08–19/08/2026</div>
           </div>
-          <div class="watchlist watchlist-grid">
+          <div class="watchlist watchlist-list">
             <div class="watch-item">
               <div class="watch-name">Pontual Contabilidade LTDA - White Label</div>
               <div class="watch-count">7<span>finalizadas</span></div>
@@ -485,12 +592,126 @@
       <div class="screen-quote">"Confiança se conquista em cada contato."</div>
     </div>
 
+    <!-- Tela 4: Top 15 Parceiros por licenças -->
+    <div class="screen">
+      <div class="screen-grid mixed">
+
+        <div class="ranking-card">
+          <div class="ranking-head">
+            <div class="card-label">Top 15</div>
+          </div>
+          <div class="ranking-cols">
+            <div class="rank-item rank-item-header">
+              <div class="rank-num"></div>
+              <div class="rank-name">Parceiro</div>
+              <div class="rank-count">Licenças</div>
+              <div class="rank-badge-label">Classificação</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">1</div>
+              <div class="rank-name">Supratech Soluções Digitais LTDA</div>
+              <div class="rank-count">487</div>
+              <div class="rank-badge diamante">Diamante</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">2</div>
+              <div class="rank-name">Erphouse Software e Soluções Digitais LTDA</div>
+              <div class="rank-count">436</div>
+              <div class="rank-badge ouro">Ouro</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">3</div>
+              <div class="rank-name">Certiseg Business Solutions LTDA</div>
+              <div class="rank-count">347</div>
+              <div class="rank-badge ouro">Ouro</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">4</div>
+              <div class="rank-name">Futuro Tecnologia da Informação LTDA</div>
+              <div class="rank-count">251</div>
+              <div class="rank-badge ouro">Ouro</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">5</div>
+              <div class="rank-name">Ticiano Teixeira Moraes Vilela</div>
+              <div class="rank-count">248</div>
+              <div class="rank-badge diamante">Diamante</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">6</div>
+              <div class="rank-name">Devz Soluções LTDA</div>
+              <div class="rank-count">239</div>
+              <div class="rank-badge diamante">Diamante</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">7</div>
+              <div class="rank-name">Digimais Tecnologia LTDA</div>
+              <div class="rank-count">210</div>
+              <div class="rank-badge ouro">Ouro</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">8</div>
+              <div class="rank-name">Conquista Sistemas do Brasil LTDA</div>
+              <div class="rank-count">208</div>
+              <div class="rank-badge ouro">Ouro</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">9</div>
+              <div class="rank-name">Felipe Roberto Bebber</div>
+              <div class="rank-count">204</div>
+              <div class="rank-badge prata">Prata</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">10</div>
+              <div class="rank-name">Thiago da Silva Vieira</div>
+              <div class="rank-count">199</div>
+              <div class="rank-badge ouro">Ouro</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">11</div>
+              <div class="rank-name">Signare Identificação Digital EIRELI</div>
+              <div class="rank-count">192</div>
+              <div class="rank-badge diamante">Diamante</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">12</div>
+              <div class="rank-name">Lord Sistemas LTDA</div>
+              <div class="rank-count">191</div>
+              <div class="rank-badge diamante">Diamante</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">13</div>
+              <div class="rank-name">Primazia Sistemas e Soluções LTDA</div>
+              <div class="rank-count">190</div>
+              <div class="rank-badge prata">Prata</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">14</div>
+              <div class="rank-name">Maicon Jadiel Brito</div>
+              <div class="rank-count">189</div>
+              <div class="rank-badge ouro">Ouro</div>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">15</div>
+              <div class="rank-name">Centrobit Informática LTDA</div>
+              <div class="rank-count">189</div>
+              <div class="rank-badge ouro">Ouro</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="screen-quote" style="margin-top:32px;">"Reconhecer os melhores parceiros fortalece toda a rede."</div>
+    </div>
+
   </div>
 
   <div class="screen-dots">
     <span class="dot active" data-index="0"></span>
     <span class="dot" data-index="1"></span>
     <span class="dot" data-index="2"></span>
+    <span class="dot" data-index="3"></span>
   </div>
 
   <footer>
