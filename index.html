@@ -275,6 +275,33 @@
   .watchlist-list .watch-count span{
     font-size:26px;
   }
+  .watchlist-cols{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    column-gap:64px;
+  }
+  .watch-col{
+    display:flex;
+    flex-direction:column;
+  }
+  .watchlist-cols .watch-item{
+    justify-content:flex-start;
+    padding:13px 0;
+    gap:24px;
+  }
+  .watchlist-cols .watch-name{
+    font-size:32px;
+    width:1080px;
+    flex:0 0 auto;
+    line-height:1.2;
+  }
+  .watchlist-cols .watch-count{
+    font-size:32px;
+    flex:0 0 auto;
+  }
+  .watchlist-cols .watch-count span{
+    font-size:24px;
+  }
 
   .ranking-card{
     background:var(--card-bg);
@@ -431,7 +458,7 @@
       </div>
     </div>
     <div class="updated">
-      Atualizado em <strong>18/08/2026</strong><br>
+      Atualizado em <strong>21/08/2026</strong><br>
       Fontes: 00 KPI Sucesso do Cliente 2026 · Atendimentos CS (PedBot) · Power BI
     </div>
   </header>
@@ -493,7 +520,7 @@
             </div>
             <div class="stat">
               <div class="stat-title">Atendimento dia</div>
-              <div class="stat-value">80<span class="unit up">▲29%</span></div>
+              <div class="stat-value">50<span class="unit down">▼37,5%</span></div>
             </div>
           </div>
         </div>
@@ -541,48 +568,92 @@
         <div class="watchlist-card">
           <div class="watchlist-head">
             <div class="card-label">Distribuidores para contato — licenças finalizadas na semana</div>
-            <div style="font-size:34px; font-weight:700; color:var(--branco);">17/08–19/08/2026</div>
+            <div style="font-size:34px; font-weight:700; color:var(--branco);">20/08–24/08/2026</div>
           </div>
-          <div class="watchlist watchlist-list">
-            <div class="watch-item">
-              <div class="watch-name">Pontual Contabilidade LTDA - White Label</div>
-              <div class="watch-count">7<span>finalizadas</span></div>
+          <div class="watchlist watchlist-cols">
+            <div class="watch-col">
+              <div class="watch-item">
+                <div class="watch-name">Supratech Soluções Digitais LTDA</div>
+                <div class="watch-count">12<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Pontual Contabilidade LTDA - White Label</div>
+                <div class="watch-count">10<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">VLR Sistemas Contábeis e Representações LTDA</div>
+                <div class="watch-count">6<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Dockbr Comercial Supply LTDA</div>
+                <div class="watch-count">5<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Ticiano Teixeira Moraes Vilela</div>
+                <div class="watch-count">5<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Certiseg Business Solutions LTDA</div>
+                <div class="watch-count">4<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Conectiweb Soluções Tecnológicas LTDA</div>
+                <div class="watch-count">4<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Douglas Maurício da Silva</div>
+                <div class="watch-count">4<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">JSS Sistemas LTDA</div>
+                <div class="watch-count">4<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">NextBH Soluções em Automação - EIRELI</div>
+                <div class="watch-count">4<span>finalizadas</span></div>
+              </div>
             </div>
-            <div class="watch-item">
-              <div class="watch-name">VLR Sistemas Contábeis e Representações LTDA</div>
-              <div class="watch-count">6<span>finalizadas</span></div>
-            </div>
-            <div class="watch-item">
-              <div class="watch-name">Dockbr Comercial Supply LTDA</div>
-              <div class="watch-count">5<span>finalizadas</span></div>
-            </div>
-            <div class="watch-item">
-              <div class="watch-name">Certiseg Business Solutions LTDA</div>
-              <div class="watch-count">4<span>finalizadas</span></div>
-            </div>
-            <div class="watch-item">
-              <div class="watch-name">JSS Sistemas LTDA</div>
-              <div class="watch-count">4<span>finalizadas</span></div>
-            </div>
-            <div class="watch-item">
-              <div class="watch-name">PHF Comércio e Soluções Tecnológicas EIRELI</div>
-              <div class="watch-count">4<span>finalizadas</span></div>
-            </div>
-            <div class="watch-item">
-              <div class="watch-name">Germin Assessoria Empresarial LTDA</div>
-              <div class="watch-count">3<span>finalizadas</span></div>
-            </div>
-            <div class="watch-item">
-              <div class="watch-name">Harmonix Tecnologia LTDA</div>
-              <div class="watch-count">3<span>finalizadas</span></div>
-            </div>
-            <div class="watch-item">
-              <div class="watch-name">Jefferson L. da Silva</div>
-              <div class="watch-count">3<span>finalizadas</span></div>
-            </div>
-            <div class="watch-item">
-              <div class="watch-name">TG Informática e Automação Comercial LTDA</div>
-              <div class="watch-count">3<span>finalizadas</span></div>
+            <div class="watch-col">
+              <div class="watch-item">
+                <div class="watch-name">PHF Comércio e Soluções Tecnológicas EIRELI</div>
+                <div class="watch-count">4<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Alex Magno de Souza</div>
+                <div class="watch-count">3<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Conquista Sistemas do Brasil LTDA</div>
+                <div class="watch-count">3<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">EW-Net Informática LTDA</div>
+                <div class="watch-count">3<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Germin Assessoria Empresarial LTDA</div>
+                <div class="watch-count">3<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Gustavo César Rodrigues Moura</div>
+                <div class="watch-count">3<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Harmonix Tecnologia LTDA</div>
+                <div class="watch-count">3<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">HR Processamento de Dados LTDA</div>
+                <div class="watch-count">3<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">Jefferson L. da Silva</div>
+                <div class="watch-count">3<span>finalizadas</span></div>
+              </div>
+              <div class="watch-item">
+                <div class="watch-name">TG Informática e Automação Comercial LTDA</div>
+                <div class="watch-count">3<span>finalizadas</span></div>
+              </div>
             </div>
           </div>
         </div>
